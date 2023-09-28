@@ -1,14 +1,21 @@
+import styles from './Header.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
 const Header: React.FC<{}> = () => {
     return (
         <div>
-            <div className="h-80;"></div>
-            <header className="header fixed top-0 left-0 w-full bg-black bg-opacity-10 z-50 flex justify-between">
-                <div className="logo w-20 h-10 text-center leading-80 text-2xl font-semibold bg-skyblue">仮ロゴ</div>
+            <header className={styles.header}>
+                <Link href="/">
+                    <Image src="/home/logo.png" alt="yuorei logo" width={300} height={100} />
+                </Link>
                 <nav >
-                    <ul className="w-full flex list-none p-0 m-0 mx-1">
-                        <li className="w-1/3 mr-4"><a href="#">Menu 1</a></li>
-                        <li className="w-1/3 mr-4"><a href="#">Menu 2</a></li>
-                        <li className="w-1/3 mr-4"><a href="#">Menu 3</a></li>
+                    <ul className={styles.menu}>
+                        <li ><a href="/skill">スキル</a></li>
+                        <li ><a href="/project">プロジェクト</a></li>
+                        <li ><a href="/history">歴史</a></li>
+                        <li ><a href="/hoby">趣味</a></li>
+                        <li ><a href="/picture">写真</a></li>
+                        <li ><a href="#sns">SNS</a></li>
                     </ul>
                 </nav>
             </header>
