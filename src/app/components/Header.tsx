@@ -15,7 +15,7 @@ const Header: React.FC<{}> = () => {
                         <li ><a href="/history">歴史</a></li>
                         <li ><a href="/hoby">趣味</a></li>
                         <li ><a href="/picture">写真</a></li>
-                        <li ><a href="#sns">SNS</a></li>
+                        <li ><a href="/#sns">SNS</a></li>
                     </ul>
                 </nav>
             </header>

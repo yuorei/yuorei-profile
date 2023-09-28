@@ -1,0 +1,20 @@
+/* SNS */
+.sns {
+    background-color: #f9f9f9;
+    padding: 50px;
+}
+
+.sns_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.sns h2 {
+    margin-top: 0%;
+    margin-bottom: 50px;
+    font-size: 150px;
+    color: #000;
+    text-align: center;
+}

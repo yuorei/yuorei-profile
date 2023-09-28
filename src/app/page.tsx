@@ -1,5 +1,6 @@
 import styles from '@/app/css/home.module.css'
 import ImageSlider from './components/ImageSlider'
+import SNS from './components/SNS'
 import Image from 'next/image'
 import Header from './components/Header'
 
@@ -24,6 +25,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <SNS />
     </div>
   )
 }
