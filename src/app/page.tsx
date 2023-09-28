@@ -1,17 +1,29 @@
-import Header from './components/Header'
+import styles from '@/app/css/home.module.css'
 import ImageSlider from './components/ImageSlider'
+import Image from 'next/image'
+import Header from './components/Header'
 
 export default function Home() {
   const images = [
-    '/home/food_suigyouza.png',
-    '/home/food_sushi_kobore_ikura_don.png',
+    '/home/roppongi.jpg',
+    '/home/tokyo.JPG',
+    '/home/goshikinuma.JPG',
   ];
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24 bg-teal-300"  >
+    <div>
       <Header />
       <ImageSlider images={images} />
-      <h1 className='text-5xl text-green-800'>ユオレイのポートフォリオ</h1>
+      <main className={styles.main}>
+        <h1 className={styles.title}>ユオレイのポートフォリオ</h1>
+        <div className={styles.profile}>
+          <Image src="/home/yuorei.png" alt="yuorei" width={400} height={400} />
+          <div>
+            <h2>プロフィール</h2>
+            <p>yuorei(ユオレイ)です。ソフトウェアエンジニアをめざして修行中</p>
+          </div>
+        </div>
+      </main>
     </div>
   )
 }

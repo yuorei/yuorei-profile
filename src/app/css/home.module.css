@@ -1,0 +1,31 @@
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.title {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.profile h2 {
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.profile p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.main {
+    background-image: url("../../../public/home/starfall-gif-46.gif");
+    background-size: cover;
+    color: white;
+}
