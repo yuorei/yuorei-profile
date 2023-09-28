@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-
+import Image from 'next/image';
+import styles from './ImageSlider.module.css';
 interface ImageSliderProps {
   images: string[];
 }
@@ -11,7 +12,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-    }, 2000);
+    }, 4000);
 
     return () => {
       clearInterval(interval);
@@ -20,11 +21,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
 
   return (
     <div>
-      <img
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex}`}
-        className='bg-yellow-300'
-      />
+      <Image className={styles.image} src={images[currentIndex]} alt={`Slide ${currentIndex}`} fill />
     </div>
   );
 };
