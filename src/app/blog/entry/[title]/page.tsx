@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import ReactMarkdown from "react-markdown";
 interface Article {
     title: string;
     content: string;
@@ -27,6 +28,7 @@ export default async function Article({ params }: { params: { title: string } })
             <h1>{article.title}</h1>
             <h2>{article.date}</h2>
             <p>{article.content}</p>
+            <ReactMarkdown>{article.content}</ReactMarkdown>;
         </div>
     );
 };
