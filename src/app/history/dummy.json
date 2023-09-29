@@ -1,0 +1,74 @@
+[
+    {
+        "title": "会津大学",
+        "status": "学部生",
+        "linkTitle": "会津大学公式サイト",
+        "link": "https://u-aizu.ac.jp/",
+        "description": "30期生 会津大学コンピュータ理工学部コンピュータ理工学科 入学",
+        "date": "2022/04/04~"
+    },
+    {
+        "title": "Zli",
+        "status": "サークル",
+        "linkTitle": "Zliについて",
+        "link": "https://old.zli.works/",
+        "description": "会津大学の技術サークルの一つです。LTやハッカソンをしたりしています",
+        "date": "2022/04/~"
+    },
+    {
+        "title": "株式会社デザイニウム",
+        "status": "インターン",
+        "linkTitle": "デザイニウム",
+        "link": "https://www.thedesignium.com/",
+        "description": "社内アプリのバックエンドをやっています Goとクリーンアーキテクチャを用いて自分が一から構築しました。",
+        "date": "2022/05~"
+    },
+    {
+        "title": "株式会社ゆめみ",
+        "status": "インターン",
+        "linkTitle": "参加したインターン",
+        "link": "https://www.yumemi.co.jp/serverside2022_summer_intern",
+        "description": "DB Schema, API, UML設計を学びました。",
+        "date": "2022/08/26"
+    },
+    {
+        "title": "株式会社 Stack (旧名 Appify Technologies)",
+        "status": "インターン",
+        "linkTitle": "Stack Inc.",
+        "link": "https://stack.inc/",
+        "description": "Go言語を使ってバックエンドエンジニアをやっています。",
+        "date": "2022/11~"
+    },
+    {
+        "title": "MIXI Bug Shooting Challenge 参加",
+        "status": "ワークショップ",
+        "linkTitle": "ブログのリンク",
+        "link": "https://yuorei.hatenablog.com/entry/2023/03/08/014047",
+        "description": "とても良い機会でした! 詳しくはブログで。",
+        "date": "2023/02/04"
+    },
+    {
+        "title": "技術書典14",
+        "status": "執筆",
+        "linkTitle": "書いた本",
+        "link": "https://techbookfest.org/product/anxJ8MV0gX3F2nDTXeu601?productVariantID=hBG7it4HWiGhXZYUjsum3r",
+        "description": "技術書典14にて、GraphQLとGo言語を使ったアプリケーションの開発について書きました。",
+        "date": "2023/05/21"
+    },
+    {
+        "title": "MIXI git Challenge 参加",
+        "status": "ワークショップ",
+        "linkTitle": "",
+        "link": "",
+        "description": "普段使わないようなgitコマンドを使うなど、gitについて深く学べました。",
+        "date": "2023/07/08"
+    },
+    {
+        "title": "MIXI TDD challenge 参加",
+        "status": "ワークショップ",
+        "linkTitle": "",
+        "link": "",
+        "description": "",
+        "date": "2023/10/01"
+    }
+]
