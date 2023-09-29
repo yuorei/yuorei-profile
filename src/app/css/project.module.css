@@ -1,0 +1,63 @@
+.page {
+    /* background-color: rgb(5, 125, 31); */
+    background-image: url("../../../public/home/sapphire-gem-2.gif");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: rgb(97, 205, 19);
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.project {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* 要素が横に並び過ぎたら折り返す */
+    gap: 20px;
+    /* 各要素の間隔を設定 */
+    padding: 0;
+    /* リストの内部余白を削除 */
+    justify-content: flex-start;
+}
+
+.item {
+    width: 300px;
+    /* アイテムの幅を固定値に設定 */
+    margin: 10px;
+    /* アイテム間の余白 */
+    padding: 15px;
+    /* アイテム内の余白 */
+    border: 1px solid #ccc;
+    /* 枠線を追加 */
+    background-color: #f9f9f9;
+    /* 背景色を設定 */
+}
+
+.item h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.item p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+
+.item a {
+    color: #f00;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.project li {
+    list-style-type: none;
+    position: relative;
+    margin-bottom: 50px;
+}
