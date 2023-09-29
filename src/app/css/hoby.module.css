@@ -1,0 +1,13 @@
+.tweet{
+    display: flex;
+    justify-content: space-around;
+    background-color: cornflowerblue;
+}
+
+.description{
+    font-size: 200%;
+    text-align: center;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
