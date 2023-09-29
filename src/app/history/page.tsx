@@ -12,7 +12,7 @@ export default function History() {
                     <li className={styles.item}>
                         <h3>{history.title}</h3>
                         <h4>{history.status}</h4>
-                        <Link href={history.link}>{history.linkTitle} </Link>
+                        <Link href={history.link} className={styles.link}>{history.linkTitle} </Link>
                         <p>{history.description}</p>
                         <p className={styles.date}>{history.date}</p>
                     </li>
