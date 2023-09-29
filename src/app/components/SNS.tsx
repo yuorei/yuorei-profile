@@ -9,7 +9,6 @@ const SNS: React.FC<{}> = () => {
                 <Link href="https://x.com/yuorei71">
                     <Image src="/sns/x.png" alt="x" width={80} height={80} />
                 </Link>
-                // GitHub
                 <Link href="https://github.com/yuorei">
                     <Image src="/sns/github.png" alt="github" width={80} height={80} />
                 </Link>
