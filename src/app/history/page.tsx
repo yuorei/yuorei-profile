@@ -1,7 +1,7 @@
 import styles from "@/app/css/history.module.css"
 import Header from "@/app/components/Header"
 import Link from 'next/link'
-import historyList from './dummy.json'
+import historyList from './historyList.json'
 export default function History() {
     return (
         <div className={styles.history}>
