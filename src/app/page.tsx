@@ -19,7 +19,7 @@ export default function Home() {
         <h1 className={styles.title}>ユオレイのポートフォリオ</h1>
         <div className={styles.profile}>
           <Image src="/home/yuorei.png" alt="yuorei" width={400} height={400} />
-          <div>
+          <div id="yuorei">
             <h2>プロフィール</h2>
             <p>yuorei(ユオレイ)です。ソフトウェアエンジニアをめざして修行中</p>
           </div>

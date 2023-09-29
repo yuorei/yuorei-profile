@@ -10,6 +10,7 @@ const Header: React.FC<{}> = () => {
                 </Link>
                 <nav >
                     <ul className={styles.menu}>
+                        <li ><a href="/#yuorei">ユオレイ</a></li>
                         <li ><a href="/skill">スキル</a></li>
                         <li ><a href="/project">プロジェクト</a></li>
                         <li ><a href="/history">歴史</a></li>
