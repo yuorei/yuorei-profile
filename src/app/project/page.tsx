@@ -8,8 +8,8 @@ export default function Project() {
             <div className={styles.page}>
                 <h1 className={styles.title}>プロジェクト</h1>
                 <ul className={styles.project}>
-                    {projectList.map((project) => (
-                        <li className={styles.item}>
+                    {projectList.map((project, index) => (
+                        <li className={styles.item} key={index}>
                             <h2>{project.projectName}</h2>
                             <p>技術スタック: {project.techStack.join(', ')}</p>
                             <p>担当: {project.field}</p>

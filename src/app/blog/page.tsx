@@ -25,8 +25,8 @@ export default async function Blog() {
         <div>
             <h1>Blog</h1>
             <ul>
-                {articles.map((article) => (
-                    <li>
+                {articles.map((article, index) => (
+                    <li key={index}>
                         <Link href={`blog/entry/${article.title}`}>
                             <h2>{article.title}</h2>
                             <p>{article.content}</p>
