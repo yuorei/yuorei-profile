@@ -1,9 +1,9 @@
 import styles from "@/app/css/skill.module.css"
-import Headers from "@/app/components/Header"
+import Header from "@/app/components/Header"
 export default function Skill() {
     return (
         <>
-            <Headers />
+            <Header />
             <div className={styles.skill}>
                 <h1>スキル</h1>
                 <h2>言語</h2>
