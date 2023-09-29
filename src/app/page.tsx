@@ -1,8 +1,10 @@
+// 'use client'
 import styles from '@/app/css/home.module.css'
 import ImageSlider from './components/ImageSlider'
 import SNS from './components/SNS'
 import Image from 'next/image'
 import Header from './components/Header'
+// import { useRouter } from 'next/navigation'
 
 export default function Home() {
   const images = [
@@ -10,6 +12,13 @@ export default function Home() {
     '/home/tokyo.JPG',
     '/home/goshikinuma.JPG',
   ];
+
+  // TODO: これを使うか迷っている
+  // const router = useRouter()
+  // setTimeout(() => {
+  //   // これを使うためには、next/routerで'use client'を使う
+  //   router.push('/#yuorei')
+  // }, 1*1000);
 
   return (
     <div>
