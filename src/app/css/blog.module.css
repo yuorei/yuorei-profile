@@ -17,6 +17,7 @@
     padding: 4rem 1rem 1rem 1.5rem;
     background: linear-gradient(-178deg, transparent 0 2rem, #333 2.1rem 2.3rem, #85bcef 2.4rem 100%);
     border-radius: 30px;
+    display: block;
 }
 
 .list::before {
