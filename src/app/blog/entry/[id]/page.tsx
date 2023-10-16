@@ -11,7 +11,7 @@ interface Article {
 }
 
 const getArticle = async (id: string) => {
-    const res = await fetch(`http://localhost:8080/blog/${id}`);
+    const res = await fetch(`${process.env.API_URL}/${id}`);
     if (res.status === 404 || res == null) {
         notFound();
     }

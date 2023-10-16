@@ -11,7 +11,7 @@ export type Article = {
 };
 
 const getArticles = async () => {
-    const res = await fetch(`http://localhost:8080/blog`);
+    const res = await fetch(`${process.env.API_URL}/blog`);
     if (res.status === 404) {
         notFound();
     }
