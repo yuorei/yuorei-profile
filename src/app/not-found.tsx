@@ -1,10 +1,13 @@
 import Header from "@/app/components/Header"
-import Image from 'next/image'
+import styles from "@/app/css/not-found.module.css"
 export default async function NotFound() {
     return (
-        <div>
-            <Header />
-            <Image src="/home/404.png" alt="404" fill />
+        <>
+        <Header />
+        <div className={styles.not_found}>
+            <h1 >404  </h1>
+            <p>ページが見つかりませんでした</p>
         </div>
+        </>
     );
 }
