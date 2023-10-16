@@ -1,38 +1,196 @@
-.menu {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    align-items: center;
-}
-
 .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #e1dee8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 40px;
+    z-index: 50;
+    position: fixed;
+    background-color: white;
+}
+
+.header .logo {
+    font-size: 20px;
+}
+
+.header nav {
+    margin-left: auto;
+}
+
+.header li {
+    display: inline-block;
+    margin-right: 15px;
+    list-style-type: none !important;
+}
+
+.header li:nth-child(6) {
+    background-color: rgb(147, 225, 225);
+    color: white;
+    width: 90px;
+    padding: 5px 10px;
+    margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        position: static;
+        /* 修正 */
+        background-color: white;
+    }
+
+    .header nav {
+        display: none;
+    }
+}
+
+.humburger {
+    background-color: rgb(34, 35, 36);
+    color: white;
+    padding: 10px 5px 0 5px;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 40px;
+}
+
+.humburger span {
+    background-color: white;
+    width: 30px;
+    height: 1px;
+    display: block;
+    margin-bottom: 7px;
+}
+
+.humburger span:nth-child(1) {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.humburger p {
+    font-size: 13px;
+    margin-top: -4px;
+    margin-bottom: 5px;
+}
+
+.drawerMenu {
+    width: 0;
+    color: white;
+    background-color: rgb(147, 225, 225);
+    transition: 0.5s;
+    height: 0;
+    opacity: 0;
+    z-index: -100;
+}
+
+.drawerMenu.open {
+    height: 100vh;
+    opacity: 1;
     z-index: 100;
 }
 
-.menu li a {
-    color: blue;
-    text-decoration: none;
+@media (max-width: 1024px) {
+    .header {
+        padding: 0 20px;
+        background-color: white;
+    }
+
+    .header .logo {
+        margin-top: 25px;
+    }
+
+    .container {
+        margin: 0 0 0 auto;
+    }
+
+    .humburger {
+        display: block;
+    }
+
+    .drawerMenu {
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .drawerMenu ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .drawerMenu li {
+        margin-bottom: 25px;
+        opacity: 0.8;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 200;
+    }
+
+    .mobileLogo {
+        width: 250px;
+        height: 80px;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+    }
+
+    .mainTitle {
+        font-size: 28px;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+    }
+
+    .subTitle {
+        font-size: 15px;
+    }
+
+    .close {
+        cursor: pointer;
+        margin-top: 28px;
+        padding-right: 5px;
+    }
+
+    .close span:first-child {
+        transform: translateY(6px) rotate(150deg);
+    }
+
+    .close span:nth-child(2) {
+        transform: translateY(-6px) rotate(-150deg);
+        margin-bottom: 0;
+    }
+
+    .close p {
+        text-align: right;
+        font-size: 11px;
+        padding-right: 1px;
+    }
 }
 
-.menu li {
-    font-size: 30px;
-    color: #2d8fdd;
-    border-left: solid 6px #2d8fdd;
-    /*左側の線*/
-    background: #f1f8ff;
-    /*背景色*/
-    margin-bottom: 3px;
-    /*下のバーとの余白*/
-    line-height: 1.5;
-    padding: 0.5em;
-    list-style-type: none !important;
-    /*ポチ消す*/
+@media (max-width: 600px) {
+    .header {
+        padding: 0 20px;
+        background-color: white;
+    }
+
+    .humburger {
+        top: 15px;
+        right: 20px;
+    }
+
+    .mobileLogo {
+        width: 190px;
+        height: 60px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .header {
+        padding: 0 10px;
+        background-color: white;
+    }
+
+    .header .logo {
+        width: 170px;
+        height: 60px;
+    }
 }
