@@ -28,7 +28,7 @@ export default async function Blog() {
         <>
             <Header />
             <div className={styles.blog}>
-                <h1>yuorei's blog</h1>
+                <h1>yuorei blog</h1>
                 <ul>
                     {articles.map((article, index) => (
                         <li className={styles.list} key={index}>
