@@ -147,6 +147,11 @@
         cursor: pointer;
         margin-top: 28px;
         padding-right: 5px;
+        color: black;
+        background-color: white;
+        text-align: center;
+        font-size: 150%;
+        margin-right: 10%;
     }
 
     .close span:first-child {

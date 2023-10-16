@@ -62,9 +62,9 @@ export default function Header() {
       <div className={`${styles.drawerMenu} ${openMenu ? styles.open : undefined}`}>
         <ul>
           <div className={styles.close} onClick={() => menuFunction()}>
-            <span></span>
-            <span></span>
-            <p>Close</p>
+            <span>Close</span>
+            {/* <span></span>
+            <p>Close</p> */}
           </div>
           <li>
             <Link href="/">
