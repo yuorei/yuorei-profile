@@ -1,27 +1,7 @@
-import { notFound } from "next/navigation";
+import { getArticle } from "./getArticle";
 import ReactMarkdown from "react-markdown";
 import styles from "@/app/css/article.module.css"
 import Header from "@/app/components/Header"
-
-interface Article {
-    ID: string;
-    Title: string;
-    Content: string;
-    Date: string;
-}
-
-const getArticle = async (id: string) => {
-    const res = await fetch(`${process.env.API_URL}/blog/${id}`);
-    if (res.status === 404 || res == null) {
-        notFound();
-    }
-    if (!res.ok) {
-        throw new Error("Failed to fetch article");
-    }
-    const data = await res.json();
-
-    return data as Article;
-}
 
 export default async function Article({ params }: { params: { id: string } }) {
     const articlePromise = getArticle(params.id);
