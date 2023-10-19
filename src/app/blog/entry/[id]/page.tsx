@@ -10,7 +10,7 @@ interface Article {
     Date: string;
 }
 
-export const getArticle = async (id: string) => {
+const getArticle = async (id: string) => {
     const res = await fetch(`${process.env.API_URL}/blog/${id}`);
     if (res.status === 404 || res == null) {
         notFound();
