@@ -1,19 +1,40 @@
-import { getArticle } from "./getArticle";
+'use client'
 import ReactMarkdown from "react-markdown";
 import styles from "@/app/css/article.module.css"
 import Header from "@/app/components/Header"
+import { notFound } from "next/navigation";
+import { useEffect, useState } from "react";
+import { Article } from '../../page';
 
-export default async function Article({ params }: { params: { id: string } }) {
-    const articlePromise = getArticle(params.id);
-    const article = await articlePromise;
+
+export default function Article({ params }: { params: { id: string } }) {
+    const [article, setArticle] = useState<Article>();
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blog/${params.id}`);
+                if (response.status === 404) {
+                    notFound();
+                }
+                if (!response.ok) {
+                    throw new Error(response.statusText);
+                }
+                const data = await response.json();
+                setArticle(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
+    }, [params.id]);
     return (
         <>
             <Header />
             <div className={styles.page}>
-                <h1>{article.Title}</h1>
-                <h2>{article.Date}</h2>
+                <h1>{article?.Title}</h1>
+                <h2>{article?.Date}</h2>
                 <div className={styles.blog}>
-                    <ReactMarkdown className={styles.md}>{article.Content}</ReactMarkdown>
+                    <ReactMarkdown className={styles.md}>{article?.Content}</ReactMarkdown>
                 </div>
             </div>
         </>

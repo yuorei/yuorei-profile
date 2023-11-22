@@ -1,4 +1,6 @@
+'use client';
 import { notFound } from "next/navigation";
+import { useEffect, useState } from "react";
 import Link from 'next/link';
 import Header from "@/app/components/Header"
 import styles from "@/app/css/blog.module.css"
@@ -6,24 +8,36 @@ import styles from "@/app/css/blog.module.css"
 export type Article = {
     ID: string;
     Title: string;
-    // Content: string;
+    Content: string;
     Date: string;
 };
 
-const getArticles = async () => {
-    const res = await fetch(`${process.env.API_URL}/blog`);
-    if (res.status === 404) {
-        notFound();
-    }
-    if (!res.ok) {
-        throw new Error("Failed to fetch article");
-    }
-    const data = await res.json();
-    return data as Article[];
-}
+export default function Blog() {
+    // const articles = await getArticles();
+    const [articles, setArticles] = useState<Article[]>([]);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blog`);
+                if (response.status === 404) {
+                    notFound();
+                }
+                if (!response.ok) {
+                    throw new Error(response.statusText);
+                }
+                const data: Article[] = await response.json();
+                // Dateを降順でソート
 
-export default async function Blog() {
-    const articles = await getArticles();
+                const sortedData = data.sort((a, b) => new Date(b.Date).getTime() - new Date(a.Date).getTime());
+
+                setArticles(sortedData);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
+    }, []);
+
     return (
         <>
             <Header />
