@@ -7,7 +7,7 @@ interface Article {
 }
 
 export const getArticle = async (id: string) => {
-    const res = await fetch(`${process.env.API_URL}/blog/${id}`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blog/${id}`);
     if (res.status === 404 || res == null) {
         notFound();
     }
