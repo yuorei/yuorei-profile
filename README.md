@@ -23,4 +23,4 @@
 
 - Firebase
 - Go
-- Cloud Run
+- 自宅サーバー
