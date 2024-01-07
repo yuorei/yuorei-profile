@@ -36,8 +36,8 @@
         "status": "インターン",
         "linkTitle": "Stack Inc.",
         "link": "https://stack.inc/",
-        "description": "Go言語を使ってバックエンドエンジニアをやっています。",
-        "date": "2022/11~"
+        "description": "Go言語とGraphQLを使ってバックエンドエンジニアをやっていました。",
+        "date": "2022/11~2023/10"
     },
     {
         "title": "MIXI Bug Shooting Challenge 参加",
@@ -68,7 +68,7 @@
         "status": "ワークショップ",
         "linkTitle": "",
         "link": "",
-        "description": "",
+        "description": "テスト駆動開発を学んできました。",
         "date": "2023/10/01"
     }
 ]
