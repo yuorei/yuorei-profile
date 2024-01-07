@@ -7,10 +7,10 @@ const SNS: React.FC<{}> = () => {
             <h2 id="sns">SNS</h2>
             <div className={styles.sns_container}>
                 <Link href="https://x.com/yuorei71">
-                    <Image src="/sns/x.png" alt="x" width={80} height={80} />
+                    <Image src="/sns/x.png" alt="x" width={40} height={40} />
                 </Link>
                 <Link href="https://github.com/yuorei">
-                    <Image src="/sns/github.png" alt="github" width={80} height={80} />
+                    <Image src="/sns/github.png" alt="github" width={40} height={40} />
                 </Link>
             </div>
         </div>

@@ -5,16 +5,16 @@
 }
 
 .sns_container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
+    display: flex;
+    gap: 20px; /* ここで間隔を設定 */
+    justify-content: center;
 }
 
 
 .sns h2 {
     margin-top: 0%;
     margin-bottom: 50px;
-    font-size: 150px;
+    font-size: 60px;
     color: #000;
     text-align: center;
 }
