@@ -70,5 +70,21 @@
         "link": "",
         "description": "テスト駆動開発を学んできました。",
         "date": "2023/10/01"
+    },
+    {
+        "title": "技術書典15",
+        "status": "執筆",
+        "linkTitle": "書いた本",
+        "link": "https://techbookfest.org/product/sNQH8gKhQVqggmr7wSpDQ1?productVariantID=hiKFpDqZ0sE1XF4V1FyVFn",
+        "description": "技術書典15にて、TDDによる開発について書きました。",
+        "date": "2023/11/12"
+    },
+    {
+        "title": "CA Tech Accel",
+        "status": "学習プログラム",
+        "linkTitle": "詳細",
+        "link": "https://cyberagent.snar.jp/jobboard/detail.aspx?id=u4hFQXb9N6s_un23wrlZsQ",
+        "description": "バックエンドエンジニアとして学びながらアプリ開発をしています。",
+        "date": "2023/12〜2024/02"
     }
 ]
