@@ -8,9 +8,10 @@ import Header from './components/Header'
 
 export default function Home() {
   const images = [
-    '/home/roppongi.jpg',
-    '/home/tokyo.JPG',
-    '/home/goshikinuma.JPG',
+    // '/home/roppongi.jpg',
+    // '/home/tokyo.JPG',
+    // '/home/goshikinuma.JPG',
+    '/home/yuorei.gif',
   ];
 
   // TODO: これを使うか迷っている
