@@ -51,7 +51,7 @@
         "projectName": "GUILD",
         "date": "2023/10",
         "field": "個人開発のため全て",
-        "techStack": ["TDD","TypeScript", "PostgreSQL", "Prisma", "Docker Compose","MiniO","Kubernetes","GitHub Actions"],
+        "techStack": ["TDD","TypeScript", "PostgreSQL", "Prisma", "Docker Compose","MiniO","Kubernetes","GitHub Actions","Next.js"],
         "summary": "ギルドは、課題を解決するためのプラットフォームです。 あなたの課題をギルドに投稿して、課題を解決しましょう！",
         "link": "https://guild.yuorei.com"
     }
