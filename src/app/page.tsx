@@ -11,9 +11,15 @@ export default function Home() {
     // '/home/roppongi.jpg',
     // '/home/tokyo.JPG',
     // '/home/goshikinuma.JPG',
-    '/home/yuorei.gif',
+    '/home/yuorei_yoko.gif',
   ];
 
+  const mobileImages = [
+    // '/home/roppongi.jpg',
+    // '/home/tokyo.JPG',
+    // '/home/goshikinuma.JPG',
+    '/home/yuorei_tate.gif',
+  ];
   // TODO: これを使うか迷っている
   // const router = useRouter()
   // setTimeout(() => {
@@ -24,7 +30,12 @@ export default function Home() {
   return (
     <div>
       <Header />
-      <ImageSlider images={images} />
+      <div className={styles.desktop} >
+        <ImageSlider images={images} />
+      </div>
+      <div className={styles.mobile} >
+        <Image className={styles.mobile} src="/home/yuorei_tate.gif" alt="yuorei" width={327} height={582} />
+      </div>
       <main className={styles.main}>
         <h1 className={styles.title}>ユオレイのポートフォリオ</h1>
         <div className={styles.profile}>
@@ -36,6 +47,6 @@ export default function Home() {
         </div>
       </main>
       <SNS />
-    </div>
+    </div >
   )
 }

@@ -31,3 +31,23 @@
     background-color: black;
     color: rgb(255, 255, 255);
 }
+
+/* PC用のスタイル */
+.desktop {
+    display: block;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  /* モバイルデバイス用のスタイル（幅が768px以下の場合） */
+  @media (max-width: 768px) {
+    .desktop {
+      display: none;
+    }
+  
+    .mobile {
+      display: block;
+    }
+  }
