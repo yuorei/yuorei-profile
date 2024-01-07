@@ -10,6 +10,7 @@
     {
         "projectName": "JPHacks2022",
         "date": "2022/10",
+        "field": "バックエンド",
         "techStack": ["Go", "バックエンド"],
         "summary": "ダイエット記録アプリを開発。",
         "link": null
@@ -17,6 +18,7 @@
     {
         "projectName": "Lending and Borrowing App",
         "date": "2022/11",
+        "field": "バックエンド",
         "techStack": ["Go", "PostgreSQL", "バックエンド"],
         "summary": "借りたい人と貸したい人を結ぶサービス。",
         "link": null
@@ -24,6 +26,7 @@
     {
         "projectName": "Lost and Found App",
         "date": "2023/03",
+        "field": "バックエンド",
         "techStack": ["Go", "GCP", "PostgreSQL"],
         "summary": "傘や手袋などの低価値な失物を写真を撮るだけで共有するツールを開発。",
         "link": "https://www.youtube.com/watch?v=F57NiQB6yW0"
@@ -31,6 +34,7 @@
     {
         "projectName": "My Anime Ranking App",
         "date": "2023/03",
+        "field": "個人開発のため全て",
         "techStack": ["React", "GraphQL", "MySQL (VPS)", "GCP", "Docker", "フロントエンドとバックエンド"],
         "summary": "お気に入りのアニメのランキングを共有するための個人プロジェクト。ログイン機能を備えています。",
         "link": "https://my-anime-ranking-front.vercel.app/"
@@ -38,6 +42,7 @@
     {
         "projectName": "Tippers",
         "date": "2023/07",
+        "field": "バックエンド",
         "techStack": ["Go", "MySQL", "gorm", "Docker Compose"],
         "summary": "日本でのチップ文化促進を目指すチップを贈るためのサービス。",
         "link": "https://docs.google.com/presentation/d/1qsy5TNcGxl6OiJhcSdfNGp0vqMtIooITFp1MI8WZvFo/edit?usp=sharing"
@@ -45,6 +50,7 @@
     {
         "projectName": "GUILD",
         "date": "2023/10",
+        "field": "個人開発のため全て",
         "techStack": ["TDD","TypeScript", "PostgreSQL", "Prisma", "Docker Compose","MiniO","Kubernetes","GitHub Actions"],
         "summary": "ギルドは、課題を解決するためのプラットフォームです。 あなたの課題をギルドに投稿して、課題を解決しましょう！",
         "link": "https://guild.yuorei.com"
