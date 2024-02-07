@@ -1,53 +1,58 @@
 .profile {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .title {
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
-    /* padding-top: 150px; */
-    text-align: center;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  /* padding-top: 150px; */
+  text-align: center;
 }
 
 .profile h2 {
-    font-size: 30px;
-    margin-left: 20px;
+  font-size: 30px;
+  margin-left: 20px;
 }
 
 .profile p {
-    font-size: 20px;
-    margin-left: 20px;
+  font-size: 20px;
+  margin-left: 20px;
 }
 
 .main {
-    background-size: cover;
-    background-color: black;
-    color: rgb(255, 255, 255);
+  background-size: cover;
+  background-color: black;
+  color: rgb(255, 255, 255);
 }
 
 /* PC用のスタイル */
 .desktop {
-    display: block;
-  }
-  
-  .mobile {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+/* モバイルデバイス用のスタイル（幅が768px以下の場合） */
+@media (max-width: 768px) {
+  .desktop {
     display: none;
   }
-  
-  /* モバイルデバイス用のスタイル（幅が768px以下の場合） */
-  @media (max-width: 768px) {
-    .desktop {
-      display: none;
-    }
-  
-    .mobile {
-      display: block;
-    }
+
+  .mobile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* 画像が親要素の幅より大きい場合は、以下のプロパティも追加してください */
+    /* max-width: 100%; */
+    height: auto;
   }
+}
