@@ -52,6 +52,7 @@
     position: fixed;
     top: 20px;
     right: 40px;
+    z-index: 1000; 
 }
 
 .humburger span {
@@ -105,6 +106,7 @@
 
     .humburger {
         display: block;
+        z-index: 1000;
     }
 
     .drawerMenu {
