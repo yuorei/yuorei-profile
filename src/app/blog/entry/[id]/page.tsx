@@ -6,7 +6,6 @@ import { notFound } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Article } from '../../page';
 
-
 export default function Article({ params }: { params: { id: string } }) {
     const [article, setArticle] = useState<Article>();
     useEffect(() => {
@@ -34,9 +33,10 @@ export default function Article({ params }: { params: { id: string } }) {
                 <h1>{article?.Title}</h1>
                 <h2>{article?.Date}</h2>
                 <div className={styles.blog}>
+                    <img src={article?.OGPURL as string} alt={article?.Title as string} style={{ width: '60%', height: 'auto', objectFit: 'contain' }} />
                     <ReactMarkdown className={styles.md}>{article?.Content}</ReactMarkdown>
                 </div>
-            </div>
+            </div >
         </>
     );
 };

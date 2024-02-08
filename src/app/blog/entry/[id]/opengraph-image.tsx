@@ -42,7 +42,7 @@ export default async function Image({ params }: { params: { id: string } }) {
         >
           {article.Title}
         </h1>
-        <img src="https://github.com/yuorei.png" alt="yuorei" />
+        <img src={article.OGPURL} alt={article.Title} />
         <div
           style={{ height: 40, backgroundColor: "#5AC8D8", width: "100%" }}
         />

@@ -4,6 +4,8 @@ interface Article {
     Title: string;
     Content: string;
     Date: string;
+    IsPublic: boolean;
+    OGPURL: string;
 }
 
 export const getArticle = async (id: string) => {

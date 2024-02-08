@@ -10,6 +10,8 @@ export type Article = {
     Title: string;
     Content: string;
     Date: string;
+    IsPublic: boolean;
+    OGPURL: string;
 };
 
 export default function Blog() {
@@ -45,13 +47,15 @@ export default function Blog() {
                 <h1>yuorei blog</h1>
                 <ul>
                     {articles.map((article, index) => (
-                        <li className={styles.list} key={index}>
-                            <Link href={`blog/entry/${article.ID}`}>
-                                <h2>{article.Title}</h2>
-                                {/* <p>{article.Content}</p> */}
-                                <p>{article.Date}</p>
-                            </Link>
-                        </li>
+                        <Link href={`blog/entry/${article.ID}`}>
+                            <li className={styles.list} key={index}>
+                                <div>
+                                    <h2>{article.Title}</h2>
+                                    <p>{article.Date}</p>
+                                </div>
+                                <img src={article.OGPURL} alt={article.Title} style={{ width: '10%', height: 'auto', objectFit: 'contain' }} />
+                            </li>
+                        </Link>
                     ))}
                 </ul>
             </div>
