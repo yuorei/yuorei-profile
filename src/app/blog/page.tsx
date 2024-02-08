@@ -47,8 +47,8 @@ export default function Blog() {
                 <h1>yuorei blog</h1>
                 <ul>
                     {articles.map((article, index) => (
-                        <Link href={`blog/entry/${article.ID}`}>
-                            <li className={styles.list} key={index}>
+                        <Link href={`blog/entry/${article.ID}`} key={index}>
+                            <li className={styles.list} >
                                 <div>
                                     <h2>{article.Title}</h2>
                                     <p>{article.Date}</p>
