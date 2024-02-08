@@ -59,6 +59,18 @@
     word-wrap: break-word;
 }
 
+.md p code {
+    color: #000000;
+    font-size: 120%;
+    font-weight: bold;
+    display: block;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
 .md pre {
     background-color: #000000;
     border-radius: 5px;
