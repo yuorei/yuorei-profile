@@ -43,7 +43,7 @@
         "title": "MIXI Bug Shooting Challenge 参加",
         "status": "ワークショップ",
         "linkTitle": "ブログのリンク",
-        "link": "https://yuorei.hatenablog.com/entry/2023/03/08/014047",
+        "link": "https://yuorei.com/blog/entry/2023-02-04-mixi-bug-shooting-challenge",
         "description": "とても良い機会でした! 詳しくはブログで。",
         "date": "2023/02/04"
     },
@@ -58,8 +58,8 @@
     {
         "title": "MIXI git Challenge 参加",
         "status": "ワークショップ",
-        "linkTitle": "",
-        "link": "",
+        "linkTitle": "ブログのリンク",
+        "link": "https://yuorei.com/blog/entry/2023-07-08-mixi-git-challenge",
         "description": "普段使わないようなgitコマンドを使うなど、gitについて深く学べました。",
         "date": "2023/07/08"
     },
