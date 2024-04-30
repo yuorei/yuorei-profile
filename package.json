@@ -23,6 +23,7 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.19",
     "@types/react": "18.2.21",
     "typescript": "5.2.2"
   }
