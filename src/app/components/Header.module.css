@@ -5,7 +5,7 @@
     height: auto;
     padding: 0 40px;
     z-index: 50;
-    position: fixed;
+    /* position: fixed; */
     background-color: white;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@
     position: fixed;
     top: 20px;
     right: 40px;
-    z-index: 1000; 
+    z-index: 1000;
 }
 
 .humburger span {

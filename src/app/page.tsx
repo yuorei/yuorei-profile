@@ -1,9 +1,8 @@
 // 'use client'
-import styles from '@/app/css/home.module.css'
-import ImageSlider from './components/ImageSlider'
-import SNS from './components/SNS'
-import Image from 'next/image'
-import Header from './components/Header'
+import styles from "@/app/css/home.module.css";
+import ImageSlider from "./components/ImageSlider";
+import SNS from "./components/SNS";
+import Image from "next/image";
 // import { useRouter } from 'next/navigation'
 
 export default function Home() {
@@ -11,14 +10,14 @@ export default function Home() {
     // '/home/roppongi.jpg',
     // '/home/tokyo.JPG',
     // '/home/goshikinuma.JPG',
-    '/home/yuorei_yoko.gif',
+    "/home/yuorei_yoko.gif",
   ];
 
   const mobileImages = [
     // '/home/roppongi.jpg',
     // '/home/tokyo.JPG',
     // '/home/goshikinuma.JPG',
-    '/home/yuorei_tate.gif',
+    "/home/yuorei_tate.gif",
   ];
   // TODO: これを使うか迷っている
   // const router = useRouter()
@@ -29,12 +28,17 @@ export default function Home() {
 
   return (
     <div>
-      <Header />
-      <div className={styles.desktop} >
+      <div className={styles.desktop}>
         <ImageSlider images={images} />
       </div>
-      <div className={styles.mobile} >
-        <Image className={styles.mobile} src="/home/yuorei_tate.gif" alt="yuorei" width={327} height={582} />
+      <div className={styles.mobile}>
+        <Image
+          className={styles.mobile}
+          src="/home/yuorei_tate.gif"
+          alt="yuorei"
+          width={327}
+          height={582}
+        />
       </div>
       <main className={styles.main}>
         <h1 className={styles.title}>ユオレイのポートフォリオ</h1>
@@ -47,6 +51,6 @@ export default function Home() {
         </div>
       </main>
       <SNS />
-    </div >
-  )
+    </div>
+  );
 }
