@@ -2,9 +2,11 @@
     padding-top: 100px;
     text-align: center;
     font-size: 100px;
+    color: black;
 }
 
 .not_found p{
     text-align: center;
     font-size: 50px;
+    color: black;
 }
