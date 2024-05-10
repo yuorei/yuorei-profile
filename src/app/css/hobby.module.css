@@ -1,0 +1,144 @@
+.description {
+    font-size: 200%;
+    /* text-align: center; */
+    color: black;
+    /* background-color: antiquewhite; */
+    border-radius: 10px;
+
+    white-space: normal;
+}
+
+@media screen and (min-width:1025px) {
+    .tweet {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+/* For normal screens */
+.flex {
+    display: flex;
+}
+
+
+.img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 768px) {
+    .flex {
+        flex-flow: column; /* Change to column layout for mobile */
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+
+
+.golde {
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(315deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+    background-image: linear-gradient(135deg, #704308 0%, #ffce08 40%, #e1ce08 60%, #704308 100%);
+}
+
+.silver{
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(315deg, #8a8a8a 0%, #d3d3d3 40%, #b0b0b0 60%, #8a8a8a 100%);
+    background-image: linear-gradient(135deg, #8a8a8a 0%, #d3d3d3 40%, #b0b0b0 60%, #8a8a8a 100%);
+}
+
+.bronze{
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(315deg, #8a4b08 0%, #d38b08 40%, #b08b08 60%, #8a4b08 100%);
+    background-image: linear-gradient(135deg, #8a4b08 0%, #d38b08 40%, #b08b08 60%, #8a4b08 100%);
+}
+
+.other {
+    padding: 1rem 2rem;
+    color: #fff;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(315deg, #08d3d3 0%, #08d3d3 40%, #08d3d3 60%, #08d3d3 100%);
+    background-image: linear-gradient(135deg, #08d3d3 0%, #08d3d3 40%, #08d3d3 60%, #08d3d3 100%);
+
+}
+
+.h1 {
+    position: relative;
+    margin-bottom: 0.2rem;
+    padding: 1rem 0;
+    border-bottom: 5px solid;
+    color: #000000;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.h1:before {
+    position: absolute;
+    bottom: -0.6rem;
+    left: 0rem;
+    right: 0rem;
+    border-bottom: 1px solid;
+    content: '';
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+    padding-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        display: flex;
+        flex-flow: column;
+        padding-left: 0px;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.hobbyItem {
+    margin-bottom: 20px;
+}
+
+.hobbyItem:hover {
+    transform: translateY(-7px);
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+}

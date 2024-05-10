@@ -1,13 +1,13 @@
-'use client';
+"use client";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import React, {useState} from "react"
+import React, { useState } from "react";
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
   const menuFunction = () => {
     setOpenMenu(!openMenu);
-  }
+  };
   return (
     <React.Fragment>
       <header id="header" className={styles.header}>
@@ -21,27 +21,27 @@ export default function Header() {
           <ul>
             <li>
               <Link href="/skill">
-              <div>スキル</div>
+                <div>スキル</div>
               </Link>
             </li>
             <li>
               <Link href="/history">
-              <div>経歴</div>
+                <div>経歴</div>
               </Link>
             </li>
             <li>
               <Link href="/blog">
-              <div>ブログ</div>
+                <div>ブログ</div>
               </Link>
             </li>
             <li>
               <Link href="/project">
-              <div>プロジェクト</div>
+                <div>プロジェクト</div>
               </Link>
             </li>
             <li>
-              <Link href="/hoby">
-              <div>趣味</div>
+              <Link href="/hobby">
+                <div>趣味</div>
               </Link>
             </li>
             <li>
@@ -59,7 +59,9 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <div className={`${styles.drawerMenu} ${openMenu ? styles.open : undefined}`}>
+      <div
+        className={`${styles.drawerMenu} ${openMenu ? styles.open : undefined}`}
+      >
         <ul>
           <div className={styles.close} onClick={() => menuFunction()}>
             <span>Close</span>
@@ -76,46 +78,46 @@ export default function Header() {
           </li>
           <li>
             <Link href="/skill">
-            <div>
-              <p className={styles.mainTitle}>スキル</p>
-              {/* <p className={styles.subTitle}></p> */}
-            </div>
+              <div>
+                <p className={styles.mainTitle}>スキル</p>
+                {/* <p className={styles.subTitle}></p> */}
+              </div>
             </Link>
           </li>
           <li>
             <Link href="/history">
-            <div>
-              <p className={styles.mainTitle}>経歴</p>
-              {/* <p className={styles.subTitle}></p> */}
-            </div>
+              <div>
+                <p className={styles.mainTitle}>経歴</p>
+                {/* <p className={styles.subTitle}></p> */}
+              </div>
             </Link>
           </li>
           <li>
             <Link href="/blog">
-            <div>
-              <p className={styles.mainTitle}>ブログ</p>
-              {/* <p className={styles.subTitle}></p> */}
-            </div>
+              <div>
+                <p className={styles.mainTitle}>ブログ</p>
+                {/* <p className={styles.subTitle}></p> */}
+              </div>
             </Link>
           </li>
           <li>
             <Link href="/project">
-            <div>
-              <p className={styles.mainTitle}>プロジェクト</p>
-              {/* <p className={styles.subTitle}></p> */}
-            </div>
+              <div>
+                <p className={styles.mainTitle}>プロジェクト</p>
+                {/* <p className={styles.subTitle}></p> */}
+              </div>
             </Link>
           </li>
           <li>
-            <Link href="/hoby">
-            <div>
-              <p className={styles.mainTitle}>趣味</p>
-              {/* <p className={styles.subTitle}></p> */}
-            </div>
+            <Link href="/hobby">
+              <div>
+                <p className={styles.mainTitle}>趣味</p>
+                {/* <p className={styles.subTitle}></p> */}
+              </div>
             </Link>
           </li>
         </ul>
       </div>
     </React.Fragment>
-  )
+  );
 }

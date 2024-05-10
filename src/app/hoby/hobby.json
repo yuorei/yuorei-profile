@@ -1,0 +1,50 @@
+[
+    {
+      "title": "名探偵コナン",
+      "id": "conan",
+      "description": "一番好きな作品です。漫画は単行本で追っています。映画も毎年頑張っていっています。ミステリーやかっこいいアクションシーン、役に立つかもしれない知識が手に入れられ流すごい漫画！めちゃ面白いのでぜひみてね！",
+      "img": "https://video-storage.yuorei.com/yuorei-home/conan_kid.png",
+      "link": "https://www.conan-portal.com/#newsContent",
+      "tags": ["漫画","アニメ","探偵","ミステリー","アクション","ラブコメ"]
+    },
+    {
+      "title": "葬送のフリーレン",
+      "id": "frieren",
+      "description": "魔法を集めながらのんびりと旅をするっていいよね",
+      "img": "https://video-storage.yuorei.com/yuorei-home/frieren.jpg",
+      "link": "https://frieren-anime.jp/",
+      "tags": ["漫画","アニメ","ファンタジー","魔法"]
+    },
+    {
+      "title": "モンスターストライク",
+      "id": "monsto",
+      "description": "ストライクショットー！小6からやっているスマホゲーム",
+      "img": "https://video-storage.yuorei.com/yuorei-home/monsto.jpeg",
+      "link": "https://www.monster-strike.com/",
+      "tags": ["ゲーム"]
+    },
+    {
+      "title": "ゆるキャン△",
+      "id": "yurucamp",
+      "description": "おでかけしておいしい料理たべたい！伊豆に聖地巡礼もしてきました(になってしまった)",
+      "img": "https://video-storage.yuorei.com/yuorei-home/shimarinn.webp",
+      "link": "https://yurucamp.jp/",
+      "tags": ["漫画","アニメ","キャンプ","旅行"]
+    },
+    {
+      "title": "HUNTER\n×\nHUNTER",
+      "id": "hxh",
+      "description": "幻影旅団編が一番おもしろい",
+      "img": "https://video-storage.yuorei.com/yuorei-home/quwrof.webp",
+      "link": "https://www.shonenjump.com/j/rensai/hunter.html",
+      "tags": ["漫画","アニメ","冒険","アクション","ファンタジー"]
+    },
+    {
+      "title": "ポケットモンスター",
+      "id": "pokemon",
+      "description": "ダイパ・ブラック世代です。そこからずっとやってます。もちろんブラックより前の過去作品もやってまよ！",
+      "img": "https://video-storage.yuorei.com/yuorei-home/dialga.png",
+      "link": "https://www.pokemon.co.jp/",
+      "tags": ["ゲーム"]
+    }
+]
